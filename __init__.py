@@ -7,6 +7,7 @@ import question_types.determinant
 import question_types.char_polynomial
 import question_types.dot_product
 import question_types.determinant_with_variable
+import question_types.recursive_formula
 
 import question_types.text_based.dot_product
 
@@ -51,6 +52,9 @@ if __name__ == '__main__':
 
     print('Generating questions')
 
+    print(question_types.recursive_formula)
+
+    generator.addQuestion(question_types.recursive_formula.generate_question())
     generator.addQuestion(question_types.char_polynomial.generate_question())
     generator.addQuestion(question_types.determinant.generate_question())
     generator.addQuestion(question_types.dot_product.generate_question())
